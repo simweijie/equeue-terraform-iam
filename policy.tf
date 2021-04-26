@@ -15,6 +15,11 @@ resource "aws_iam_policy" "policy_lambda" {
         "ec2:AttachNetworkInterface"
       ],
       "Resource": "*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": "sns:Publish",
+      "Resource": "*"
     }
   ]
 }
